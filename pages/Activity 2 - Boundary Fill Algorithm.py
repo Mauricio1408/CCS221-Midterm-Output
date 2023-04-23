@@ -26,10 +26,10 @@ st.pyplot(initial_fig2)
 
 #4 pixel implementation
 st.sidebar.subheader('Boundary-fill:')
-x_b = st.sidebar.number_input('X: (Boundary-fill)', min_value=0, max_value=7, step=1, value = 0)
-y_b = st.sidebar.number_input('Y: (Boundary-fill)', min_value=0, max_value=5, step=1, value = 0)
-c_b = st.sidebar.number_input('Color: (0-50) (Boundary-fill)', min_value=0, max_value=50, step=1, value = 0)
-boarder = st.sidebar.number_input('Boarder Color: (0-50) (Boundary-fill)', min_value=0, max_value=50, step=1, value = 0)
+x_b = st.sidebar.number_input('X: (Boundary-fill)', min_value=0, max_value=7, step=1, value = 1)
+y_b = st.sidebar.number_input('Y: (Boundary-fill)', min_value=0, max_value=5, step=1, value = 1)
+c_b = st.sidebar.number_input('Color: (0-50) (Boundary-fill)', min_value=0, max_value=50, step=1, value = 9)
+boarder = st.sidebar.number_input('Boarder Color: (0-50) (Boundary-fill)', min_value=0, max_value=50, step=1, value = 2)
 
 fig2 = plt.figure()
 def change_b(x_val, y_val, c_b, boarder):
